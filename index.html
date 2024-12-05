@@ -37,19 +37,20 @@
         width: 100%;
         margin: auto;
         padding: 20px;
-        /* Dodajemy cień, aby tekst był bardziej widoczny nad wideo */
-        color: white;
-        text-shadow: 2px 2px 4px #000000;
+        /* Dodajemy większy odstęp od góry */
+        margin-top: 20%;
+        color: #333; /* Ciemniejszy kolor dla tekstu */
+        text-shadow: 1px 1px 2px #000000;
     }
     h2, h3 {
-        font-size: 16px;
+        font-size: 4vw; /* Większy rozmiar czcionki dla nagłówków */
     }
     ul {
         text-align: left;
-        font-size: 14px;
+        font-size: 3.5vw; /* Responsywność dla listy */
     }
     p, .steps p {
-        font-size: 14px;
+        font-size: 3.5vw; /* Responsywność dla paragrafów */
     }
     .whatsapp-button {
         display: inline-block;
@@ -60,7 +61,7 @@
         text-decoration: none;
         margin-top: 20px;
         text-align: center;
-        font-size: 14px;
+        font-size: 3.5vw; /* Responsywność dla przycisku */
     }
     .whatsapp-button:hover {
         background-color: #128C7E;
@@ -73,6 +74,17 @@
     .steps {
         counter-reset: step;
     }
+    @media (min-width: 600px) {
+        .container {
+            margin-top: 10%;
+        }
+        h2, h3 {
+            font-size: 30px; /* Maksymalny rozmiar dla większych ekranów */
+        }
+        ul, p, .steps p, .whatsapp-button {
+            font-size: 16px; /* Maksymalny rozmiar dla większych ekranów */
+        }
+    }
 </style>
 </head>
 <body>
@@ -80,6 +92,7 @@
 <div class="bg">
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="27669-365224683_large.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje elementu wideo.
     </video>
 </div>
 <div class="container">
@@ -87,7 +100,7 @@
     <p>Dziękuję za zainteresowanie ofertą. Jeśli chcesz dowiedzieć się więcej o współpracy, skontaktuj się przez WhatsApp.</p>
     
     <div class="steps">
-        <p>Skontaktuj się ze mną przez WhatsApp: Kliknij przycisk poniżej lub użyj numeru **795649340**.</p>
+        <p>Skontaktuj się ze mną przez WhatsApp: Kliknij przycisk poniżej lub użyj numeru **791294253**.</p>
     </div>
 
     <h3>Dlaczego warto?</h3>
@@ -97,7 +110,7 @@
         <li>Rozwój osobisty: Nowe umiejętności na całe życie.</li>
     </ul>
 
-    <a href="https://wa.me/48795649340" class="whatsapp-button">Napisz do mnie na WhatsApp</a>
+    <a href="https://wa.me/48791294253" class="whatsapp-button">Napisz do mnie na WhatsApp</a>
 </div>
 
 </body>
