@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praca Zdalna z Nami</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        /* Dodajemy cień, aby tekst był bardziej widoczny nad wideo */
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    h2, h3 {
+        font-size: 16px;
+    }
+    ul {
+        text-align: left;
+        font-size: 14px;
+    }
+    p, .steps p {
+        font-size: 14px;
+    }
+    .whatsapp-button {
+        display: inline-block;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .whatsapp-button:hover {
+        background-color: #128C7E;
+    }
+    .steps p::before {
+        content: counter(step) ". ";
+        counter-increment: step;
+        font-weight: bold;
+    }
+    .steps {
+        counter-reset: step;
+    }
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="27669-365224683_large.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="container">
+    <h2>Zacznij zarabiać online z nami!</h2>
+    <p>Dziękuję za zainteresowanie ofertą. Jeśli chcesz dowiedzieć się więcej o współpracy, skontaktuj się przez WhatsApp.</p>
+    
+    <div class="steps">
+        <p>Skontaktuj się ze mną przez WhatsApp: Kliknij przycisk poniżej lub użyj numeru **795649340**.</p>
+    </div>
+
+    <h3>Dlaczego warto?</h3>
+    <ul>
+        <li>Szkolenia: Otrzymasz pełne wsparcie.</li>
+        <li>Współpraca: Praca z renomowanymi firmami.</li>
+        <li>Rozwój osobisty: Nowe umiejętności na całe życie.</li>
+    </ul>
+
+    <a href="https://wa.me/48795649340" class="whatsapp-button">Napisz do mnie na WhatsApp</a>
+</div>
+
+</body>
+</html>
